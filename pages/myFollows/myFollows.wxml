@@ -1,0 +1,23 @@
+<!--myFollows.wxml-->
+<block  wx:for="{{list}}" wx:key="unique">
+<view class="follow_list">
+	<view class="f_img">
+		<!--<view class="icon"></view>-->
+		<image class="img" src="{{item.pictureUrl}}" />
+	</view>
+	<view class="t1">
+	 	{{item.name}}
+	</view>
+	<view class="t2"><image src="../../images/d-icon1.png"></image> 06月18号    19: 00</view>
+	 <view class="t2">
+	 <image src="../../images/d-icon2.png"></image>{{item.address}}
+	</view>
+</view>
+</block >
+
+<view class="no_event">{{isNoData}}</view>
+<!--
+class="publishing"
+class="no_publish" 
+-->
+
